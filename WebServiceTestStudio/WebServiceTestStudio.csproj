@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C1F7145-193F-4DC9-AB51-9281E8982FA6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebServiceTestStudio</RootNamespace>
+    <AssemblyName>WebServiceTestStudio</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.Prism.Composition">
+      <HintPath>..\..\..\..\..\..\..\3rdParty\Microsoft\Practices\Prism\5.0\bin\Microsoft.Practices.Prism.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.Mvvm">
+      <HintPath>..\..\..\..\..\..\..\3rdParty\Microsoft\Practices\Prism\5.0\bin\Microsoft.Practices.Prism.Mvvm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.Mvvm.Desktop">
+      <HintPath>..\..\..\..\..\..\..\3rdParty\Microsoft\Practices\Prism\5.0\bin\Microsoft.Practices.Prism.Mvvm.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.PubSubEvents">
+      <HintPath>..\..\..\..\..\..\..\3rdParty\Microsoft\Practices\Prism\5.0\bin\Microsoft.Practices.Prism.PubSubEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.SharedInterfaces">
+      <HintPath>..\..\..\..\..\..\..\3rdParty\Microsoft\Practices\Prism\5.0\bin\Microsoft.Practices.Prism.SharedInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.UnityExtensions">
+      <HintPath>..\..\..\..\..\..\..\3rdParty\Microsoft\Practices\Prism\5.0\bin\Microsoft.Practices.Prism.UnityExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\..\..\..\..\..\..\3rdParty\Microsoft\Practices\ServiceLocator\1.2\bin\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\3rdParty\Microsoft\Practices\Unity\3.5\bin\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\..\..\..\..\..\..\3rdParty\Microsoft\Practices\Unity\3.5\bin\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention">
+      <HintPath>..\..\..\..\..\..\..\3rdParty\Microsoft\Practices\Unity\3.5\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Data">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Design">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Core">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Commands\MainWindowCommands.cs" />
+    <Compile Include="Controls\BasePropertyGridContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ContentManager.cs" />
+    <Compile Include="Controls\IContextMenuGenerator.cs" />
+    <Compile Include="Controls\LookupContextMenuGenerator.cs" />
+    <Compile Include="Controls\MouseOverride.cs" />
+    <Compile Include="Controls\ParameterContextMenuGenerator.cs" />
+    <Compile Include="Controls\PropetyGridContextMenuAssociator.cs" />
+    <Compile Include="Controls\WpfPropertyGrid.cs" />
+    <Compile Include="Events\CopyAndPasteEvent.cs" />
+    <Compile Include="Events\CurrentProtocolChangedEvent.cs" />
+    <Compile Include="Events\EventService.cs" />
+    <Compile Include="Events\InvokeEvent.cs" />
+    <Compile Include="Events\LookupEvent.cs" />
+    <Compile Include="Events\MethodSelectedEvent.cs" />
+    <Compile Include="Events\SendParameterToNewMethodEvent.cs" />
+    <Compile Include="Extentions.cs" />
+    <Compile Include="MainWindowDesignViewModel.cs" />
+    <Compile Include="Model\Converters\ArrayConverter.cs" />
+    <Compile Include="Model\Converters\ExpandoObjectConverter.cs" />
+    <Compile Include="Model\Converters\WsdlObjectConverter.cs" />
+    <Compile Include="Model\Delegates.cs" />
+    <Compile Include="Model\PropertyDescriptors\DictionaryPropertyDescriptor.cs" />
+    <Compile Include="Model\PropertyDescriptors\ElementDescriptor.cs" />
+    <Compile Include="Model\PropertyDescriptors\WsdlFieldDescriptor.cs" />
+    <Compile Include="Model\TypeDescriptorModifier.cs" />
+    <Compile Include="Model\WsdlModel.cs" />
+    <Compile Include="Services.cs" />
+    <Compile Include="Views\ConsoleOutput.xaml.cs">
+      <DependentUpon>ConsoleOutput.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DataGridWindow.xaml.cs">
+      <DependentUpon>DataGridWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DataGridWindowViewModel.cs" />
+    <Compile Include="Views\HelpWindow.xaml.cs">
+      <DependentUpon>HelpWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LookupWindow.xaml.cs">
+      <DependentUpon>LookupWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LookupWindowViewModel.cs" />
+    <Compile Include="Views\MainWindowViewModel.cs" />
+    <Compile Include="Views\NewProtocolName.xaml.cs">
+      <DependentUpon>NewProtocolName.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ParametersView.xaml.cs">
+      <DependentUpon>ParametersView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ParametersViewViewModel.cs" />
+    <Compile Include="Views\ProtocolWindow.xaml.cs">
+      <DependentUpon>ProtocolWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProtocolWindowViewModel.cs" />
+    <Compile Include="Views\WsdlControlViewModel.cs" />
+    <Compile Include="Views\WsdlControl.xaml.cs">
+      <DependentUpon>WsdlControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WebServiceStudio\CustomHandler.cs" />
+    <Compile Include="WebServiceStudio\IAdditionalProperties.cs" />
+    <Compile Include="WebServiceStudio\MessageTracer.cs" />
+    <Compile Include="WebServiceStudio\ProxyProperties.cs" />
+    <Compile Include="WebServiceStudio\RequestProperties.cs" />
+    <Compile Include="WebServiceStudio\Wsdl.cs" />
+    <Compile Include="WebServiceStudio\WSSWebRequestCreate.cs" />
+    <Compile Include="WebServiceStudio\WSWebRequest.cs" />
+    <Compile Include="WebServiceStudio\WSWebResponse.cs" />
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ConsoleOutput.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DataGridWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\HelpWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LookupWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Views\NewProtocolName.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ParametersView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ProtocolWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\WsdlControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\code\SettingsTracker\SettingsTracking.csproj">
+      <Project>{3572580b-117f-4b0f-af32-4e527ffdbd14}</Project>
+      <Name>SettingsTracking</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

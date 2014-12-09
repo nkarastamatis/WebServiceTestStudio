@@ -1,0 +1,8 @@
+﻿<Window x:Class="WebServiceTestStudio.Views.DataGridWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DataGridWindow" Height="300" Width="700">
+    <Grid>
+        <DataGrid Name="dataGrid" ItemsSource="{Binding DataTable}"></DataGrid>
+    </Grid>
+</Window>

@@ -1,0 +1,17 @@
+﻿<Window x:Class="WebServiceTestStudio.Views.ProtocolWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="clr-namespace:Microsoft.Practices.Prism.Mvvm;assembly=Microsoft.Practices.Prism.Mvvm.Desktop"
+        xmlns:controls="clr-namespace:WebServiceTestStudio.Controls"
+        Loaded="Window_Loaded"
+        Title="Protocol Settings" Height="600" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="200*"/>
+        </Grid.RowDefinitions>
+        <ComboBox ItemsSource="{Binding ProtocolsByName}" DisplayMemberPath="Key" SelectedValuePath="Value" SelectedValue="{Binding SelectedProtocol, Mode=TwoWay}" SelectedItem="{Binding SelectedProtocolItem}" HorizontalAlignment="Stretch" Margin="0,0,76,0"></ComboBox>
+        <Button Command="{Binding AddProtocolCommand}" HorizontalAlignment="Right">Add Protocol</Button>
+        <controls:WpfPropertyGrid x:Name="wpfPropertyGrid" Grid.Row="1" SelectedObject="{Binding SelectedProtocol, Mode=TwoWay}" ContextMenuGenerator="{Binding RequestContextMenuGenerator, Mode=TwoWay}"></controls:WpfPropertyGrid>
+    </Grid>
+</Window>

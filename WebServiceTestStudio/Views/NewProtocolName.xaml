@@ -1,0 +1,12 @@
+﻿<Window x:Class="WebServiceTestStudio.Views.NewProtocolName"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="New Protocol Name" Height="120" Width="300">
+    <Grid>
+        <StackPanel Margin="0,0,0,10">            
+            <Label>Enter New Protocol Name</Label>
+            <TextBox Name="ProtocolName" HorizontalAlignment="Stretch"></TextBox>
+            <Button IsDefault="True" Click="btnOK_Click">OK</Button>
+        </StackPanel>
+    </Grid>
+</Window>

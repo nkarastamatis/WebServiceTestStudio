@@ -1,0 +1,8 @@
+﻿<Window x:Class="WebServiceTestStudio.Views.ConsoleOutput"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ConsoleOutput" Height="300" Width="300">
+    <Grid>
+        <TextBox Name="ConsoleTextBox" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto"></TextBox>
+    </Grid>
+</Window>

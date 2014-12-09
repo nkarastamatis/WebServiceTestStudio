@@ -1,0 +1,8 @@
+﻿<Window x:Class="WebServiceTestStudio.Views.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Help" Height="500" Width="500">
+    <Grid>
+        <TextBlock><Bold><Run Text="Help"/></Bold><LineBreak/><LineBreak/><Bold><Run Text="Load WSDL"/></Bold><LineBreak/><Run Text="* Press Browse button."/><LineBreak/><Run Text="* Open a WSDL file."/><LineBreak/><Run Text="* Press Load."/><LineBreak/><Run/><LineBreak/><Run FontWeight="Bold" Text="Invoke a Method"/><LineBreak/><Run Text="* Double click a method."/><LineBreak/><Run Text="* Edit the Request parameters as needed."/><LineBreak/><Run Text="** After editing an item, press Enter to move to the next field."/><LineBreak/><Run Text="* Press F5 to invoke the method."/><LineBreak/><Run Text="* Response will appear in right-hand side property grid."/><LineBreak/><Run/><LineBreak/><Run FontWeight="Bold" Text="Copy &amp; Paste"/><LineBreak/><Run Text="* Right click the grid of an object in a property grid."/><LineBreak/><Run Text="* If the object you clicked is defined in the WSDL, then you will have the option to Copy."/><LineBreak/><Run Text="* Right click an object of the same type to paste. "/></TextBlock>
+    </Grid>
+</Window>
